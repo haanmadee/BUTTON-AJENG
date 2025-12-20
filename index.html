@@ -1,0 +1,49 @@
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+    /* Custom Animation: Soft Floating */
+    @keyframes softFloat {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-3px); } /* Bergerak naik dikit */
+    }
+    
+    .animate-float {
+        animation: softFloat 3s ease-in-out infinite;
+    }
+    
+    /* Delay biar gerakannya ga barengan (lebih natural) */
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-300 { animation-delay: 0.3s; }
+</style>
+
+<div style="font-family: 'Poppins', sans-serif; width: 100%; padding: 15px 0;">
+    
+    <div class="flex items-center gap-2 w-full max-w-[380px] mx-auto">
+        
+        <a href="https://lynk.id/ajengwahys" 
+           style="background: linear-gradient(135deg, #141e3d 0%, #243b55 100%);"
+           class="animate-float delay-100 flex-none w-10 h-10 rounded-full flex items-center justify-center text-white shadow-md hover:scale-105 transition-transform no-underline">
+           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+           </svg>
+        </a>
+
+        <a href="https://lynk.id/ajengwahys/page/page" 
+           target="_blank"
+           style="background: linear-gradient(90deg, #141e3d 0%, #243b55 100%);"
+           class="animate-float delay-200 flex-1 flex items-center justify-center h-10 px-1 rounded-full text-white text-[10px] font-medium tracking-[0.05em] uppercase hover:opacity-90 active:scale-95 transition-all no-underline shadow-md leading-tight">
+           Work & Branding
+        </a>
+
+        <a href="https://lynk.id/ajengwahys/page/trial" 
+           target="_blank"
+           style="background: linear-gradient(90deg, #141e3d 0%, #243b55 100%);"
+           class="animate-float delay-300 flex-1 flex items-center justify-center h-10 px-1 rounded-full text-white text-[10px] font-medium tracking-[0.05em] uppercase hover:opacity-90 active:scale-95 transition-all no-underline shadow-md leading-tight">
+           Kids Learning
+        </a>
+
+    </div>
+</div>
